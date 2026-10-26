@@ -56,8 +56,8 @@ fun main() {
         return
     }
 
-    // Los pedidos desde tres pizzas tienen un 10% de descuento.
-    val descuento: Double = if (hayStock && cantidadPizzas >= 3) {
+    // Los pedidos de más de tres pizzas tienen un 10% de descuento.
+    val descuento: Double = if (hayStock && cantidadPizzas > 3) {
         subtotal * 0.10
     } else {
         0.0
